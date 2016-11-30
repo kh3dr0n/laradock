@@ -312,6 +312,29 @@ services:
         links:
             - php-fpm
 
+### Logstash Container #################################
+
+    logstash:
+        build: logstash/
+        command: -f /etc/logstash/conf.d/
+        volumes:
+            - ./logstash/config:/etc/logstash/conf.d
+        ports:
+            - "5000:5000"
+        depends_on:
+            - elasticsearch
+
+### Logstash Container #################################
+
+    kibana:
+        build: kibana/
+        volumes:
+            - ./kibana/config/:/opt/kibana/config/
+        ports:
+            - "5601:5601"
+        depends_on:
+            - elasticsearch
+
 ### Volumes Setup ###########################################
 
 volumes:
