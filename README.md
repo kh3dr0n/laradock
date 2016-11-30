@@ -111,6 +111,7 @@ Let's see how easy it is to install `NGINX`, `PHP`, `Composer`, `MySQL` and `Red
 - Latest version of the Docker Compose file (`docker-compose`).
 - Everything is visible and editable.
 - Fast Images Builds.
+- ELK stack is included for loging and visualizing log files.
 - More to come every week..
 
 
@@ -137,11 +138,13 @@ Let's see how easy it is to install `NGINX`, `PHP`, `Composer`, `MySQL` and `Red
 - **Message Queueing Systems:**
 	- Beanstalkd (+ Beanstalkd Console)
 	- RabbitMQ (+ RabbitMQ Console)
+- **Logging:**
+	- ElasticSearch, Logstash, Kibana stack for logging and visu logs
 - **Tools:**
 	- Workspace (PHP7-CLI, Composer, Git, Node, Gulp, SQLite, xDebug, Vim...)
 	- PhpMyAdmin
 	- PgAdmin
-	- ElasticSearch
+	- ElasticSearch	
 
 
 >If you can't find your Software, build it yourself and add it to this list. Contributions are welcomed :)
@@ -332,7 +335,7 @@ docker-compose up -d nginx mysql
 
 You can select your own combination of Containers form the list below:
 
-`nginx`, `hhvm`, `php-fpm`, `mysql`, `redis`, `postgres`, `mariadb`, `neo4j`, `mongo`, `apache2`, `caddy`, `memcached`, `beanstalkd`, `beanstalkd-console`, `rabbitmq`, `workspace`, `phpmyadmin`, `aerospike`, `pgadmin`, `elasticsearch`.
+`nginx`, `hhvm`, `php-fpm`, `mysql`, `redis`, `postgres`, `mariadb`, `neo4j`, `mongo`, `apache2`, `caddy`, `memcached`, `beanstalkd`, `beanstalkd-console`, `rabbitmq`, `workspace`, `phpmyadmin`, `aerospike`, `pgadmin`, `elasticsearch`, `logstash`, `kibana`.
 
 
 
